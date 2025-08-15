@@ -7,15 +7,18 @@ Project Overview:
 
 The objective is to implement a Modbus communication system with the following components:
 
-Master: Manages packet sending and receiving for Coil Read, Single Register Write, and Input Register Read.
+1. Master: Manages packet sending and receiving for Coil Read, Single Register Write, and Input Register Read.
 
-Controller (Relay): Responds to packet requests from the Master to toggle relay states and relay the current status.
+2. Controller (Relay): Responds to packet requests from the Master to toggle relay states and relay the current status.
 
-Actuator (Temperature Sensor): Responds to input read requests, measures the temperature via an LM75 sensor, and transmits the temperature reading back to the Master.
+3. Actuator (Temperature Sensor): Responds to input read requests, measures the temperature via an LM75 sensor, and transmits the temperature reading back to the Master.
 
 Prerequisites:
 
-Hardware: ESP32 or similar microcontroller board for each device, LM75 temperature sensor for the Actuator, relay module for the Controller.
+Hardware: 
+1. ESP32 or similar microcontroller board for each device
+2. LM75 temperature sensor for the Actuator
+3. relay module for the Controller
 
 Software: Arduino IDE with serial communication libraries.
 
